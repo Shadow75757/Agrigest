@@ -1,17 +1,2 @@
 # Agrigest
 Agrigest is a project to manage farmimg system implementing multiple concepts
-
-Dados meteorológicos API OpenWeatherMap
-Sugerir/ajustar práticas como irrigação/fertilização/cobertura
-Comunicação por WebSockets
-GUI in Flask
-Automatic docm with Sphinx
-Testes unitários (minimum 5)
-
-
-
-======= Dependencies =======
-We have a requirements file.
-If any dependecies are missing just open this project's terminal and:
-
-- pip install -r requirements.txt
