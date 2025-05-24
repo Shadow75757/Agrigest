@@ -1,0 +1,7 @@
+flask
+requests
+flask-socketio
+apscheduler
+python-dotenv
+sphinx
+pytest
