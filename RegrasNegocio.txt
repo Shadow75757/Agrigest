@@ -2,8 +2,8 @@ Regras de Negócio
 
 Estas regras servem como base para a modelação do sistema, desenvolvimento de funcionalidades, testes e documentação.
 
-1. Recolha de Dados Meteorológicos
-O sistema deve obter dados meteorológicos em tempo real da API OpenWeatherMap .
+1. Recolha Dados Meteorológicos
+O sistema deve obter dados meteorológicos em tempo real da API OpenWeatherMap.
 Os dados recolhidos devem incluir:
 - Temperatura (ºC)
 - Humidade (%)
@@ -13,9 +13,9 @@ Os dados recolhidos devem incluir:
 
 2. Análise e Sugestão de Práticas Agrícolas
 Com base nos dados meteorológicos, o sistema deve sugerir ações agrícolas relevantes, como:
-- Irrigação : caso a humidade esteja baixa e não haja previsão de chuva.
-- Fertilização : com base em padrões climáticos ideais para fertilização (ex: dias sem chuva).
-- Cobertura : caso haja previsão de chuva forte ou vento intenso.
+- Irrigação: caso a humidade esteja baixa e não haja previsão de chuva.
+- Fertilização: com base em padrões climáticos ideais para fertilização (ex: dias sem chuva).
+- Cobertura: caso haja previsão de chuva forte ou vento intenso.
 
 
 3. Comunicação via WebSocket
@@ -42,14 +42,9 @@ Devem ser aplicados padrões de design adequados à arquitetura do sistema, tais
 6. Documentação Automática
 Todo o código deve estar comentado e seguir boas práticas de documentação.
 Deve ser gerada documentação automática com Sphinx.
-A documentação deve incluir:
-- Descrição das classes e funções
-- Diagramas UML (classe, componente)
-- Exemplos de uso
-- Estrutura do projeto
 
 7. Testes Unitários
-O sistema deve incluir pelo menos 5 testes unitários , cobrindo:
+O sistema deve incluir pelo menos 5 testes unitários:
 - Obtenção de dados da API OpenWeatherMap
 - Decisão de irrigação com base na humidade
 - Detecção de chuva
@@ -64,3 +59,4 @@ Deve permitir:
 - Visualização dos dados meteorológicos
 - Visualização da sugestão agrícola
 - Acesso ao histórico de consultas
+- Dashboard com gráficos
