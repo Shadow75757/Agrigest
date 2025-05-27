@@ -1,0 +1,66 @@
+Regras de Negócio
+
+Estas regras servem como base para a modelação do sistema, desenvolvimento de funcionalidades, testes e documentação.
+
+1. Recolha de Dados Meteorológicos
+O sistema deve obter dados meteorológicos em tempo real da API OpenWeatherMap .
+Os dados recolhidos devem incluir:
+- Temperatura (ºC)
+- Humidade (%)
+- Precipitação (chuva)
+- Previsão de chuva
+
+
+2. Análise e Sugestão de Práticas Agrícolas
+Com base nos dados meteorológicos, o sistema deve sugerir ações agrícolas relevantes, como:
+- Irrigação : caso a humidade esteja baixa e não haja previsão de chuva.
+- Fertilização : com base em padrões climáticos ideais para fertilização (ex: dias sem chuva).
+- Cobertura : caso haja previsão de chuva forte ou vento intenso.
+
+
+3. Comunicação via WebSocket
+O sistema deve utilizar WebSockets para comunicação entre cliente e servidor.
+O cliente envia uma cidade ao servidor via WebSocket.
+O servidor responde automaticamente com os dados meteorológicos e sugestões agrícolas.
+
+4. Armazenamento de Dados
+Todos os dados recolhidos devem ser armazenados localmente num ficheiro JSON.
+O histórico deve ser acessível via API (/api/weather/history).
+O formato de armazenamento deve incluir:
+- Cidade consultada
+- Data/hora da consulta
+- Dados meteorológicos completos
+- Sugestão agrícola dada
+
+5. Padrões de Design
+Devem ser aplicados padrões de design adequados à arquitetura do sistema, tais como:
+- Singleton: para gestão do WebSocket ou conexão com a API.
+- Strategy: para diferentes estratégias de decisão agrícola (rega, cobertura, etc.).
+- Observer: para notificação em tempo real dos clientes conectados.
+- Facade: simplificar a interação com a API OpenWeatherMap.
+
+6. Documentação Automática
+Todo o código deve estar comentado e seguir boas práticas de documentação.
+Deve ser gerada documentação automática com Sphinx.
+A documentação deve incluir:
+- Descrição das classes e funções
+- Diagramas UML (classe, componente)
+- Exemplos de uso
+- Estrutura do projeto
+
+7. Testes Unitários
+O sistema deve incluir pelo menos 5 testes unitários , cobrindo:
+- Obtenção de dados da API OpenWeatherMap
+- Decisão de irrigação com base na humidade
+- Detecção de chuva
+- Leitura e escrita no ficheiro JSON
+- Funcionamento do servidor WebSocket
+
+
+8. Interface Simples
+A interface do cliente deve ser simples e minimalista.
+Deve permitir:
+- Inserção do nome da cidade
+- Visualização dos dados meteorológicos
+- Visualização da sugestão agrícola
+- Acesso ao histórico de consultas
