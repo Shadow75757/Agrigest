@@ -5,3 +5,10 @@ apscheduler
 python-dotenv
 sphinx
 pytest
+websockets
+aiohttp
+asyncio
+matplotlib
+fastapi
+uvicorn
+requests

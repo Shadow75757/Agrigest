@@ -9,6 +9,7 @@ Os dados recolhidos devem incluir:
 - Humidade (%)
 - Precipitação (chuva)
 - Previsão de chuva
+- etc
 
 
 2. Análise e Sugestão de Práticas Agrícolas
@@ -16,6 +17,7 @@ Com base nos dados meteorológicos, o sistema deve sugerir ações agrícolas re
 - Irrigação: caso a humidade esteja baixa e não haja previsão de chuva.
 - Fertilização: com base em padrões climáticos ideais para fertilização (ex: dias sem chuva).
 - Cobertura: caso haja previsão de chuva forte ou vento intenso.
+- etc
 
 
 3. Comunicação via WebSocket
